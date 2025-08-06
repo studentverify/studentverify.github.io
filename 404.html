@@ -12,7 +12,7 @@
     // Construct the new URL by combining the base URL and the path
     // This is crucial for GitHub Pages to correctly route SPAs
     var newUrl = base + 
-      (window.location.pathname.startsWith("/student-verify") ? "/student-verify" : "") + 
+      (window.location.pathname.startsWith("/") ? "/" : "") + 
       "/?p=" + 
       window.location.pathname.substring(1) + 
       window.location.search + 
